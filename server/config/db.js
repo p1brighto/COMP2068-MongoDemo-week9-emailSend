@@ -1,5 +1,5 @@
 module.exports = {
-    'url': 'mongodb://thomas:12345@ds061345.mongolab.com:61345/heroku_qnl2tjrh'
+    'url': 'mongodb://p1brighto:chirackal1@ds015929.mlab.com:15929/week9-email-send'
 };
 
 //# sourceMappingURL=db.js.map
