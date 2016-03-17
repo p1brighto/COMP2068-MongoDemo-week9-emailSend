@@ -1,4 +1,3 @@
-"use strict";
 var mongoose = require('mongoose');
 // DEFINE THE OBJECT SCHEMA
 var articleSchema = new mongoose.Schema({

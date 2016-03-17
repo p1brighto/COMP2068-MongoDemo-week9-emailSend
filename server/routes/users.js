@@ -1,4 +1,3 @@
-"use strict";
 var express = require('express');
 var router = express.Router();
 var userModel = require('../models/user');
@@ -30,7 +29,9 @@ router.get('/add', function (req, res, next) {
 router.post('/add', function (req, res, next) {
     User.create({
         username: req.body.username,
-        password: req.body.password
+        password: req.body.password,
+        email: req.body.email,
+        displayName: req.body.displayName
     }, function (error, User) {
         // did we get back an error or valid Users object?
         if (error) {
@@ -67,7 +68,9 @@ router.post('/:id', function (req, res, next) {
     var user = new User({
         _id: id,
         username: req.body.username,
-        password: req.body.password
+        password: req.body.password,
+        email: req.body.email,
+        displayName: req.body.displayName
     });
     // run the update using mongoose and our model
     User.update({ _id: id }, user, function (error) {

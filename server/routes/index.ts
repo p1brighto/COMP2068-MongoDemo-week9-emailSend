@@ -1,10 +1,8 @@
 import express = require('express');
-import passport = require('passport');
 var sendgrid = require('sendgrid')('azure_84c024842e756033521773acc6801bc1@azure.com', 'georgian2016');
 var router = express.Router();
 
 // db references
-import mongoose = require('mongoose');
 var User = require('../models/user');
 
 /* GET home page. */
