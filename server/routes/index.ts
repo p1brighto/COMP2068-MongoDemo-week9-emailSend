@@ -1,5 +1,5 @@
 import express = require('express');
-var sendgrid = require('sendgrid')('azure_84c024842e756033521773acc6801bc1@azure.com', 'georgian2016');
+var sendgrid = require('sendgrid')('app48624747@heroku.com', 'chirackal1');
 var router = express.Router();
 
 // db references
